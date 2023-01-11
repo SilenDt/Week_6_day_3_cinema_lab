@@ -30,7 +30,7 @@ Cinema.prototype.filmsFromYear = function(year) {
 }
 
 Cinema.prototype.filmsOverLength = function(length) {
-  return this.films.every(film => film.length > length)
+  return this.films.every(film => film.length >= length)
 }
 
 // Cinema.prototype.filmsByYear = function(year) {
